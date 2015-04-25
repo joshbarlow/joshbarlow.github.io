@@ -75,8 +75,8 @@
 	padding-left: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	letter-spacing: 4px;
 	line-height: 14px;
+	letter-spacing: 4px;
 	color: #999693;
 	text-align: center;
 	position: relative;
@@ -151,8 +151,8 @@
 	z-index: 34;
 	width: 460px;
 	min-height: 136px;
-	letter-spacing: 0px;
 	line-height: 21px;
+	letter-spacing: 0px;
 	color: #626262;
 	position: relative;
 	margin-right: -10000px;
@@ -191,6 +191,18 @@
 .AccordionPanelTab /* accordion */
 {
 	cursor: pointer;
+}
+
+#u3049-4
+{
+	z-index: 50;
+	width: 920px;
+	min-height: 37px;
+	text-align: center;
+	color: #7F7F7F;
+	margin-left: 20px;
+	margin-top: 20px;
+	position: relative;
 }
 
 body
