@@ -65,6 +65,43 @@ font-size: 13px;
 }
 
 @media only screen and (min-width: 100px) {
+  /* For phones: */
+
+.flex-container-s {
+  flex-wrap: wrap;
+  width: 280px;
+  display: flex;
+  background-color: #FFFFFF;
+  justify-content: space-between;
+  font-family: Arial;
+}
+
+.flex-container-s > div {
+  background-color: #FFFFFF;
+  margin: 0px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 30px;
+}
+  
+  .flex-container-content-s {
+  width: 280px;
+  display: flex;
+  background-color: #FFFFFF;
+  justify-content: space-between;
+  font-family: Arial;
+  flex-wrap: wrap;
+}
+
+.flex-container-content-s > div {
+  background-color: #FFFFFF;
+  margin: 0px;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 650px) {
   /* For tablets: */
   
   .flex-container-s {
