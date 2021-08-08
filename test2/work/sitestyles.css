@@ -10,10 +10,6 @@ body, html {
     font-family: 'Arial';
 }
 
-.header {
-  padding: 15px;
-}
-
 .row::after {
   list-style-type: none;
   content: "";
@@ -51,119 +47,97 @@ font-size: 13px;
 @media only screen and (min-width: 100px) {
   /* For phones: */
 
-.flex-container-s {
-  flex-wrap: wrap;
-  width: 280px;
-  display: flex;
-  background-color: #FFFFFF;
-  justify-content: space-between;
-  font-family: Arial;
+  .width-container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .titleDiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-flow: wrap;
+    font-family: Arial;
+    margin: 0px;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    font-size: 30px;
+  }
+
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0px;
+  }
+
+  .contentSingle {
+    display: initial;
+  }
+
+  .contentDouble {
+    display: none;
+  }
+
 }
 
-.flex-container-s > div {
-  background-color: #FFFFFF;
-  margin: 0px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 30px;
-}
-
-  .flex-container-content-s {
-  width: 280px;
-  display: flex;
-  background-color: #FFFFFF;
-  justify-content: space-between;
-  font-family: Arial;
-  flex-wrap: wrap;
-}
-
-.flex-container-content-s > div {
-  background-color: #FFFFFF;
-  margin: 0px;
-  padding-top: 0px;
-  padding-bottom: 30px;
-  font-size: 30px;
-}
-
-@media only screen and (min-width: 650px) {
-  /* For tablets: */
-
-  .flex-container-s {
-  width: 590px;
-  display: flex;
-  background-color: #FFFFFF;
-  justify-content: space-between;
-  font-family: Arial;
-}
-
-.flex-container-s > div {
-  background-color: #FFFFFF;
-  margin: 0px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 30px;
-}
-
-  .flex-container-content-s {
-  width: 590px;
-  display: flex;
-  background-color: #FFFFFF;
-  justify-content: space-between;
-  font-family: Arial;
-  flex-wrap: wrap;
-}
-
-.flex-container-content-s > div {
-  background-color: #FFFFFF;
-  margin: 0px;
-  padding-top: 0px;
-  padding-bottom: 30px;
-  font-size: 30px;
-}
-  .col-s-1 {display: table-row; text-align: center}
-  .col-s-2 {display: table; width: 100%}
-  .col-s-3 {display: inline-block}
-  .col-s-4 {display: none}
-}
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 600px) {
   /* For desktop: */
 
-  .flex-container {
-  width: 900px;
-  display: flex;
-  background-color: #FFFFFF;
-  justify-content: space-between;
-  font-family: Arial;
+  .width-container {
+    padding-left: 20px;
+    padding-right:20px;
+  }
+
+  .titleDiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-family: Arial;
+    margin: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+  }
+
+  .contentSingle {
+    display: none;
+  }
+
+  .contentDouble {
+    display: initial;
+  }
+
 }
 
-.flex-container > div {
-  background-color: #FFFFFF;
-  margin: 0px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  font-size: 30px;
-}
+@media only screen and (min-width: 900px) {
+  /* For desktop: */
 
-  .flex-container-content {
-  width: 900px;
-  display: flex;
-  background-color: #FFFFFF;
-  justify-content: space-between;
-  font-family: Arial;
-  flex-wrap: wrap;
-}
+  .width-container {
+    padding-left: 120px;
+    padding-right:120px;
+    max-width: 1400px;
+  }
 
-.flex-container-content > div {
-  background-color: #FFFFFF;
-  margin: 0px;
-  padding-top: 0px;
-  padding-bottom: 30px;
-  font-size: 30px;
-}
-  .col-1 {display: table-cell; text-align: center; width: 200px; height: 200px; padding-left: 33px; padding-right: 33px;}
-  .col-2 {display: table; width: 800px}
-  .col-3 {display: none}
-  .col-4 {display: inline-block}
+  .titleDiv {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    font-family: Arial;
+    margin: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+
 }
 
 .content-title {
@@ -177,33 +151,50 @@ padding-top:0px;
 padding-bottom: 20px;
 }
 
-.titleDiv {
-  width: 100%;
-  display: flex;
-  background-color: #FFFFFF;
-  justify-content: space-between;
-  font-family: Arial;
-  margin: 0px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 120px;
-  padding-right: 120px;
-  font-size: 30px;
-}
-
 .contentDiv {
   width: 100%;
   display: flex;
-  background-color: #FFFFFF;
   justify-content: space-between;
   font-family: Arial;
-  margin: 0px;
+  background-color: #FFFFFF;
   padding-bottom: 40px;
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 0px;
+  padding-right: 0px;
   font-size: 30px;
 }
 
 .container {
     width: 100%;
+}
+
+.titleText {
+  color: #323232;
+  font-size: 24px;
+  line-height: 60px;
+  letter-spacing: 3px;
+}
+
+#menuText {
+  letter-spacing: 3px;
+  color: grey;
+  font-size: 20px;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+#menuText a:link, a:visited {color: black; text-decoration: none;}
+#menuText a:hover, #menuText a:active {
+  color: grey;
+}
+
+.workSubtitleText {
+
+}
+
+.workDescriptionText {
+
+}
+
+.footerText {
+
 }
